@@ -99,6 +99,9 @@ body {
 
 }
 
+/* ? Tried experimenting with the padding
+ ?? The comment text container is a little too far or
+ ??? the spacing in-between the paragraph lines is too short? */
 .comment {
     width: 625px;
     max-height: 70px;
