@@ -191,6 +191,44 @@ body {
       fill: hsl(239, 57%, 85%);
       color: hsl(239, 57%, 85%);
     }
+
+    #delete-edit-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .delete-button {
+        font-size: 16px;
+        color: hsl(358, 79%, 66%);
+        background-color: hsl(0, 0%, 100%);
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .delete-button:hover .delete-fill,
+      .delete-button:hover span {
+        fill: hsl(357, 100%, 86%);
+        color: hsl(357, 100%, 86%);
+      }
+
+    .edit-button {
+        font-size: 16px;
+        color: hsl(238, 40%, 52%);
+        background-color: hsl(0, 0%, 100%);
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .edit-button:hover .edit-fill,
+      .edit-button:hover span {
+        fill: hsl(239, 57%, 85%);
+        color: hsl(239, 57%, 85%);
+      }
   
   
   /* ? Tried experimenting with the padding
