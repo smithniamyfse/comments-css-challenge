@@ -6,7 +6,7 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    justify-items: end;
 }
 
 .comment-1 {
@@ -31,14 +31,26 @@ body {
   
 #comment-container-layout {
     display: flex;
-    /* max-height: 175px; */
-    max-height: fit-content;
-    max-width: fit-content;
+    max-height: 175px;
+    width: 735px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 25px;
+    padding: 25px 0px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+  }
+
+  #reply-container-layout {
+    display: flex;
+    max-height: 175px;
+    width: 650px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 25px 0px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 8px;
   }
@@ -80,11 +92,20 @@ body {
   }
   
   #comment-container {
-    padding: 0px 0px 0px 25px;
+    /* padding: 0px 0px 0px 25px; */
   }
   
   #top-heading-container {
     width: 625px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #top-reply-heading-container {
+    width: 530px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -147,6 +168,15 @@ body {
   .comment {
     width: 625px;
     max-height: 70px;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: hsl(211, 10%, 45%);
+    padding: 20px 0px 0px 0px;
+  }
+
+  .reply-commentary {
+    width: 530px;
+    max-height: 65px;
     font-size: 16px;
     font-family: "Rubik", sans-serif;
     color: hsl(211, 10%, 45%);
